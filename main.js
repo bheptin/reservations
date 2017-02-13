@@ -1,13 +1,14 @@
 const citySearch = document.querySelector('#cities');
-const api = `https://api.teleport.org/api/cities/?search={city:search-by-text}`;
+const dataList = document.querySelector('#cityList');
+const api = `https://api.teleport.org/api/cities/?search=${citySearch}`;
 
 
 
 citySearch.addEventListener('keyup', function(e) {
       const search = e.target.value;
-      getFilteredCities(search).then(cities => {
-        const suggestions = citySearch.map(city => `<option value="${city}">`).join("\n");
-        data.innerHTML = suggestions;
+      pullCities(citySearch).then(cities => {
+        const filteredCity = cityList.map(city => `<option value="${cityList}">`).join("\n");
+        dataList.innerHTML = suggestions;
       })
 });
 
@@ -15,12 +16,4 @@ const cityState = [];
 
 fetch(api)
   .then(blob => blob.json())
-  .then(curies => cityState.push(console.log(curies)))
-
-function findMatch(citySearch, cityState) {
-  return citySearch.filter(place => {
-
-  });
-}
-
-findMatch('tus');
+  .then(data => (console.log(data)));
