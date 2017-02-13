@@ -64,10 +64,10 @@
 
     <div id="cities" class="col-lg-3">
     <div class="input-group">
-      <input type="text" class="form-control" id="textBox" placeholder="Search for...">
+      <input list="cityList" type="text" class="form-control" id="textBox" placeholder="Search for...">
         <datalist id="cityList"></datalist>
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
+        <button id="button" class="btn btn-default" type="button">Go!</button>
       </span>
     </div>
   </div>
@@ -99,6 +99,7 @@
   </div>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 
 </html>

@@ -1,10 +1,18 @@
-const citySearch = document.querySelector('#textBox');
-const dataList = document.querySelector('#cityList');
-const api = `https://api.teleport.org/api/cities/?search=${citySearch}`;
+const citySearch = document.querySelector('#cities');
+const dataList = document.querySelector('#textBox');
 
+citySearch.addEventListener('keyup', function(e) {
+  const search = e.target.value;
+  console.log(search);
+  getFilteredCities(search).then(cities => {
+		const suggestions = cities.map(city => `<dataList value="${city}">`).join("\n");
+		dataList.innerHTML = suggestions;
+	})
+});
 
-const cityState = [];
-
-fetch(api)
-  .then(blob => blob.json())
-  .then(data => (console.log(data)))
+const getFilteredCities = (search) => {
+	return axios.get(`https://api.teleport.org/api/cities/?search=${search}`).then(response => {
+    return response.data._embedded['city:search-results'].map(city => city.matching_full_name);
+    console.log(response.data);
+	})
+}
