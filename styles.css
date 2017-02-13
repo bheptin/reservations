@@ -1,0 +1,15 @@
+
+#dates {
+  display: inline-flex;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.chkin, .chkout {
+  margin-right: 10px;
+}
+.col-lg-3 {
+  float: none;
+}
+.rooms p {
+  margin-bottom: 12px;
+}
