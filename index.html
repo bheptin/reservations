@@ -73,14 +73,14 @@
   </div>
 
   <div id="dates">
-    <form class="chkin">
+    <form id="inDate">
       <p>Check-in</p>
-      <input  type="date" name="check-in" min="2017-02-11">
+      <input class="chkin" type="date" name="check-in">
     </form>
 
-    <form class="chkout">
+    <form id="outDate">
       <p>Check-out</p>
-      <input  type="date" name="check-out" min="">
+      <input class="chkout" type="date" name="check-out">
     </form>
 
     <form class="rooms" method="post">
@@ -98,11 +98,9 @@
       <option> 9
       </select>
     </form>
-
   </div>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
-
 </html>
