@@ -1,14 +1,24 @@
-
+body {
+  background-image: url("http://img.7te.org/images/570x363/hd-sea-side-beach-view-high-resolution-photos-wallpapers-downloadjpg-2641039.jpg");
+  display: block;
+  position: inherit;
+}
 #dates {
   display: inline-flex;
   margin-top: 30px;
   margin-left: 20px;
 }
+#dates p {
+  color: white;
+}
 .chkin, .chkout {
   margin-right: 10px;
+
 }
 .col-lg-3 {
-  float: none;
+  width: 80%;
+  padding-right: 20%;
+  margin-left: 20%;
 }
 .rooms p {
   margin-bottom: 12px;
