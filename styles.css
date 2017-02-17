@@ -19,6 +19,7 @@ body {
   width: 80%;
   padding-right: 20%;
   margin-left: 20%;
+  padding-top: 20px;
 }
 .rooms p {
   margin-bottom: 12px;
@@ -30,5 +31,5 @@ h1 {
   color: #67D3E0;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
