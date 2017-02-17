@@ -23,3 +23,6 @@ body {
 .rooms p {
   margin-bottom: 12px;
 }
+.navbar-default {
+  background-color: #67D3E0;
+}
