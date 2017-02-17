@@ -1,7 +1,7 @@
 body {
   background-image: url("http://img.7te.org/images/570x363/hd-sea-side-beach-view-high-resolution-photos-wallpapers-downloadjpg-2641039.jpg");
   display: block;
-  position: inherit;
+  text-align: center;
 }
 #dates {
   display: inline-flex;
@@ -25,4 +25,10 @@ body {
 }
 .navbar-default {
   background-color: #67D3E0;
+}
+h1 {
+  color: #67D3E0;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
